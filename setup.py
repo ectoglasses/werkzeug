@@ -4,5 +4,6 @@ from setuptools import setup
 setup(
     name="Werkzeug",
     install_requires=["dataclasses; python_version < '3.7'"],
+    dependancy_links=["git+https://github.com/ectoglasses/dataclasses.git#egg=dataclasses"],
     extras_require={"watchdog": ["watchdog"]},
 )
